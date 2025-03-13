@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 import mysql from 'mysql2/promise';
-import config from '../config.json'; // Ensure correct path
+const config = require('../tsconfig.json');
 
 interface DatabaseConfig {
     host: string;

@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node ./server.js",
-    "start:dev": "nodemon ./server.js"
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "start:dev": "nodemon --ext ts --exec ts-node src/server.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -16,6 +17,12 @@
     "sequelize": "^6.3.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.17.24",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
