@@ -1,7 +1,6 @@
 import { Sequelize } from 'sequelize';
 import mysql from 'mysql2/promise';
-const config = require('../tsconfig.json');
-
+const config = require('../config.json'); // Correct file
 interface DatabaseConfig {
     host: string;
     port: number;
